@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="slide" onclick="changePreset(false)"><i class="fa-solid fa-chevron-left"></i></div>
+    <div class="calculator">
+        <div class="display"></div>
+        <div class="buttons">
+                <div class="plus no" onclick="changeDisplay('*')">*</div>
+                <div class="7 no" onclick="changeDisplay('7')">7</div>
+                <div class="8 no" onclick="changeDisplay('8')">8</div>
+                <div class="9 no" onclick="changeDisplay('9')">9</div>
+                 <div class="minus no" onclick="changeDisplay('+')">+</div>
+                <div class="4 no" onclick="changeDisplay('4')">4</div>
+                <div class="5 no" onclick="changeDisplay('5')">5</div>
+                <div class="6 no" onclick="changeDisplay('6')">6</div>
+                <div class="divide no" onclick="changeDisplay('-')">-</div>
+                <div class="1 no" onclick="changeDisplay('1')">1</div>
+                <div class="2 no" onclick="changeDisplay('2')">2</div>
+                <div class="3 no" onclick="changeDisplay('3')">3</div>
+                 <div class="multiply no" onclick="changeDisplay('/')">/</div>
+                <div class="0 no" onclick="changeDisplay('0')">0</div>
+                <div class=". no" onclick="changeDisplay('.')">.</div>
+                <div class="equals no" onclick="calculate()">=</div>
+            </div>
+            <div class="clear" onclick="clearDisplay()">C</div>
+        </div>
+    </div>
+    <div class="slide" onclick="changePreset(true)"><i class="fa-solid fa-chevron-right"></i></div>
+    <script src="Script.js"></script>
+</body>
+</html>

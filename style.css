@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    min-width: 100vh;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #DAD4EF;
+    gap:50px;
+}
+.calculator{
+    height:72vh;
+    width:50vh;
+    background-color: #566368;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 82, 0.434) ;
+}
+.display{
+    overflow:hidden;
+    white-space: nowrap;           
+    font-weight:lighter;
+    text-align: right;
+    font-size:9vh;
+    font-family:monospace;
+    height:12vh;
+    border-radius: 7px;
+    margin:7px;
+    color:whitesmoke;
+    background-color: #888fb7;
+}
+.buttons
+{
+    margin-left:3vh;
+    margin-top: 2vh;
+    width:50vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
+    gap: 10px; /* spacing between buttons */
+    width:38vh;
+    justify-content: space-between;
+}
+.no{
+     height:10vh;
+    width:10vh;
+    background-color: #C0A9B0;
+    border-radius:  50%;
+    display: flex;            /* centers text inside */
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Digital-7', monospace;
+    cursor:pointer;
+}
+.clear{
+    height:10vh;
+    width: 10vh;
+    background-color: #C0A9B0;
+    font-family: 'Digital-7', monospace;
+    font-size: 2rem;
+    display: flex;            /* centers text inside */
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-left: 20vh;
+    border-radius: 50%;
+    color: white;
+    cursor:pointer;
+}
+.no:hover{
+    box-shadow: 0 0 10px  hsla(195, 11%, 22%, 0.8) ;
+    background-color:  #d7cdd0;
+}
+.clear:hover{
+    box-shadow: 0 0 10px  hsla(195, 11%, 22%, 0.8) ;
+    background-color:  #d7cdd0;
+}
+.slide{
+    height:10vh;width:10vh;
+    background-color: #9ba2a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+}
+.slide:hover{
+    box-shadow: 0 0 15px #4f5354d1;
+}
